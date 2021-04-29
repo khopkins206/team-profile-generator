@@ -59,11 +59,11 @@ node index.js
 It is recommended that you start with a directory structure that looks like the following example:
 
 ```md
-**tests**/ // jest tests
-Employee.test.js
-Engineer.test.js
-Intern.test.js
-Manager.test.js
+__tests__/ // jest tests
+    Employee.test.js
+    Engineer.test.js
+    Intern.test.js
+    Manager.test.js
 dist/ // rendered output (HTML) and CSS style sheet
 lib/ // classes
 src/ // template helper code
