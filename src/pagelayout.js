@@ -1,50 +1,47 @@
 const createManager = (teamMember) => {
-  return `<div class="card text-center">
+  return `<div class="card text-center col-xs-6 col-md-4">
       <div class="card-header">
-       Manager: ${teamMember.grabName()}
+      <span class = "icon">☕</span>
+       <h3>Manager</h3> <p> ${teamMember.grabName()} </p>
      </div>
-      <div class="card-body">
+      <div class="card-body list-group list-group-flush">
        <ul>
-        <li>ID: ${teamMember.grabID()} </li>
-        <li>Email: ${teamMember.grabEmail()} </li>
-        <li>Office Phone: ${teamMember.grabOffice()} </li>
+        <li class="list-group-item">ID: ${teamMember.grabID()} </li>
+        <li class="list-group-item">Email: ${teamMember.grabEmail()} </li>
+        <li class="list-group-item">Office Phone: ${teamMember.grabOffice()} </li>
        </ul>
-     </div>
-     <div class="card-footer text-muted">
      </div>
     </div>`
 }
 
 const createEngineer = (teamMember) => {
-  return `<div class="card text-center">
-      <div class="card-header">
-       Engineer: ${teamMember.grabName()}
+  return `<div class="card text-center col-xs-6 col-md-4">
+      <div class="card-header list-group list-group-flush">
+        <span class = "icon">👓</span>
+        <h3>Engineer</h3> <p> ${teamMember.grabName()} </p>
      </div>
-      <div class="card-body">
+      <div class="card-body list-group list-group-flush">
        <ul>
-        <li>ID: ${teamMember.grabID()} </li>
-        <li>Email: ${teamMember.grabEmail()} </li>
-        <li>GitHub: ${teamMember.grabGithub()} </li>
+        <li class="list-group-item">ID: ${teamMember.grabID()} </li>
+        <li class="list-group-item">Email: ${teamMember.grabEmail()} </li>
+        <li class="list-group-item">GitHub: ${teamMember.grabGithub()} </li>
        </ul>
-     </div>
-     <div class="card-footer text-muted">
      </div>
     </div>`
 }
 
 const createIntern = (teamMember) => {
-  return `<div class="card text-center">
+  return `<div class="card text-center col-xs-6 col-md-4">
       <div class="card-header">
-       Intern: ${teamMember.grabName()}
+      <span class = "icon">🎓</span>
+       <h3>Intern</h3> <p> ${teamMember.grabName()} </p>
      </div>
-      <div class="card-body">
+      <div class="card-body list-group list-group-flush">
        <ul>
-        <li>ID: ${teamMember.grabID()} </li>
-        <li>Email: ${teamMember.grabEmail()} </li>
-        <li>School: ${teamMember.grabSchool()} </li>
+        <li class="list-group-item">ID: ${teamMember.grabID()} </li>
+        <li class="list-group-item">Email: ${teamMember.grabEmail()} </li>
+        <li class="list-group-item">School: ${teamMember.grabSchool()} </li>
        </ul>
-     </div>
-     <div class="card-footer text-muted">
      </div>
     </div>`
 }
@@ -72,11 +69,12 @@ const generateHTML = (teamMembers) => {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>My Team</title>
     </head>
     <body>
         <nav>
-            <div class="nav-wrapper">
+            <div class="nav-wrapper text-center">
             <h1>My Team</h1>
             </div>
         </nav>
