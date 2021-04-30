@@ -128,11 +128,8 @@ const init = () => {
 
     teamMembers.push(manager)
 
-    console.log(answers)
-
     switch (answers.nextEmployee) {
       case `Engineer`:
-        console.log("yo")
         askEngineerQuestions()
         break;
       case `Intern`:
