@@ -7,6 +7,7 @@ const createManager = (teamMember) => {
        <ul>
         <li>ID: ${teamMember.grabID()} </li>
         <li>Email: ${teamMember.grabEmail()} </li>
+        <li>Office Phone: ${teamMember.grabOffice()} </li>
        </ul>
      </div>
      <div class="card-footer text-muted">
@@ -23,6 +24,7 @@ const createEngineer = (teamMember) => {
        <ul>
         <li>ID: ${teamMember.grabID()} </li>
         <li>Email: ${teamMember.grabEmail()} </li>
+        <li>GitHub: ${teamMember.grabGithub()} </li>
        </ul>
      </div>
      <div class="card-footer text-muted">
@@ -39,6 +41,7 @@ const createIntern = (teamMember) => {
        <ul>
         <li>ID: ${teamMember.grabID()} </li>
         <li>Email: ${teamMember.grabEmail()} </li>
+        <li>School: ${teamMember.grabSchool()} </li>
        </ul>
      </div>
      <div class="card-footer text-muted">
@@ -74,7 +77,7 @@ const generateHTML = (teamMembers) => {
     <body>
         <nav>
             <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">My Team</a>
+            <h1>My Team</h1>
             </div>
         </nav>
         <div class="row">
