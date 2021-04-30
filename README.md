@@ -35,13 +35,13 @@ NPM install inquirer
 # Usage
 
 You will answer a series of questions in your terminal that will create an index.html within your project's folder.
-![Terminal Questions](assets/terminal-create-file.gif)
+![Terminal Questions](assets/terminal-team-maker.gif)
 
 Then you will be able to see the file populate within your VSCode
-![index.html in VSCode](assets/README-in-VSCode.png)
+![index.html in VSCode](assets/vscode-team-maker.gif)
 
 From there, you can commit your index.js to your Github Repo and see it
-![index.html in Browser](assets/readme-in-browser.gif)
+![index.html in Browser](assets/browser-team-maker.png)
 
 # Contributions
 
